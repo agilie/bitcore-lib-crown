@@ -1,5 +1,7 @@
-Bitcore Library
-=======
+Bitcore-Lib-Crown
+=================
+
+# This package is under development. Please don't install.
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-lib.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-lib)
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-lib.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-lib)
@@ -88,6 +90,4 @@ or create a test coverage report (you can open `coverage/lcov-report/index.html`
 
 ## License
 
-Code released under [the MIT license](https://github.com/bitpay/bitcore-lib/blob/master/LICENSE).
-
-Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
+See `License` file.

@@ -1,8 +1,8 @@
 {
-  "name": "bitcore-lib",
-  "version": "0.13.19",
-  "description": "A pure and powerful JavaScript Bitcoin library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "name": "bitcore-lib-crown",
+  "version": "0.0.0",
+  "description": "A pure and powerful JavaScript Crown library.",
+  "author": "Crown Developers <info@crown.tech>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -11,6 +11,10 @@
     "build": "gulp"
   },
   "contributors": [
+    {
+      "name": "BitPay",
+      "email": "dev@bitpay.com"
+    },
     {
       "name": "Daniel Cousens",
       "email": "bitcoin@dcousens.com"
@@ -57,7 +61,7 @@
     }
   ],
   "keywords": [
-    "bitcoin",
+    "crown",
     "transaction",
     "address",
     "p2p",
@@ -74,7 +78,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-lib.git"
+    "url": "https://github.com/Crowndev/bitcore-lib-crown.git"
   },
   "browser": {
     "request": "browser-request"
