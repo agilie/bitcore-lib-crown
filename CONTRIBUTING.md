@@ -1,5 +1,9 @@
-Contributing to Bitcore
-=======
+This repo is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib.
+
+Parameters in `lib/networks.js` can be found in Core's `src/chainparams.cpp`.
+
+Contributing
+============
 
 We're working hard to make *bitcore* the most powerful JavaScript library for working with bitcoin. Our goal is to have *bitcore* be a library that can be used by anyone interested in bitcoin, and to level expertise differences with great design and documentation.
 
