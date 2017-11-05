@@ -6,8 +6,9 @@ bitcore-lib-crown
 Contributing
 ============
 
-See `CONTRIBUTING` file.
+See `CONTRIBUTING.md` file.
 
-## License
+License
+=======
 
 See `LICENSE` file.
