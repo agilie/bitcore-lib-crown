@@ -1,6 +1,8 @@
 This repo is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib.
 
-Parameters in `lib/networks.js` can be found in Core's `src/chainparams.cpp`.
+In `lib/networks.js`: All parameters can be found in Core's `src/chainparams.cpp`.
+
+In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `src/main.h`. `Transaction.DUST_AMOUNT` can be found in Core's `src/primitives/transaction.h`.
 
 Contributing
 ============
