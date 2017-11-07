@@ -4,6 +4,8 @@ In `lib/networks.js`: All parameters can be found in Core's `src/chainparams.cpp
 
 In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `src/main.h`. `Transaction.DUST_AMOUNT` can be found in Core's `src/primitives/transaction.h`.
 
+In `lib/uri.js`: The example address is taken from Core's `src/qt/test/uritests.cpp`.
+
 Contributing
 ============
 
