@@ -77,11 +77,11 @@ describe('Address', function() {
 
   // livenet p2sh
   var P2SHLivenet = [
-    '342ftSRCvFHfCeFFBuz4xwbeqnDw6BGUey',
-    '33vt8ViH5jsr115AGkW6cEmEz9MpvJSwDk',
-    '37Sp6Rv3y4kVd1nQ1JV5pfqXccHNyZm1x3',
-    '3QjYXhTkvuj8qPaXHTTWb5wjXhdsLAAWVy',
-    '\t \n3QjYXhTkvuj8qPaXHTTWb5wjXhdsLAAWVy \r'
+    'CJnKUY6RYnZFtTZQFWPjwxv9H1eJ1GKV2a',
+    'CcKanQDsXLAJpJtNhecHbNf6UFaSBitEju',
+    'CWB81JzZVUQ4P4xozfwiixmQf8u83NmHJi',
+    'CWB81JzZVUQ4P4xozfwiixmQf8u83NmHJi',
+    '\t \nCLyhnygQ7KGRU8HrhQGtbV6vvcEDpBzgta \r'
   ];
 
   // testnet p2sh
