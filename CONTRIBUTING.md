@@ -6,6 +6,12 @@ In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `sr
 
 In `lib/uri.js`: The example address is taken from Core's `src/qt/test/uritests.cpp`.
 
+The Base58 "script address" isn't compatible with Bitcoin's, so many tests needs modification. But in some cases we don't need to regenerate an address -- If the code already has the binary form, for example `5ece0cadddc415b1980f001785947120acdb36fc`, we can get the Base58 form using this function so we will only modify the Base58 form and leave the binary form unaffected:
+
+```js
+bitcore.Address.fromScriptHash(new Buffer("5ece0cadddc415b1980f001785947120acdb36fc","hex"))
+```
+
 Contributing
 ============
 
