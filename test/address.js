@@ -119,17 +119,17 @@ describe('Address', function() {
   describe('validation', function() {
 
     it('getValidationError detects network mismatchs', function() {
-      var error = Address.getValidationError('37BahqRsFrAd3qLiNNwLNV3AWMRD7itxTo', 'testnet');
+      var error = Address.getValidationError('CLq7R6joyxCuB6g1B2ko7a7fDFV8kYMt9d', 'testnet');
       should.exist(error);
     });
 
     it('isValid returns true on a valid address', function() {
-      var valid = Address.isValid('37BahqRsFrAd3qLiNNwLNV3AWMRD7itxTo', 'livenet');
+      var valid = Address.isValid('CLq7R6joyxCuB6g1B2ko7a7fDFV8kYMt9d', 'livenet');
       valid.should.equal(true);
     });
 
     it('isValid returns false on network mismatch', function() {
-      var valid = Address.isValid('37BahqRsFrAd3qLiNNwLNV3AWMRD7itxTo', 'testnet');
+      var valid = Address.isValid('CLq7R6joyxCuB6g1B2ko7a7fDFV8kYMt9d', 'testnet');
       valid.should.equal(false);
     });
 
