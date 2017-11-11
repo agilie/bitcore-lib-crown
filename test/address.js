@@ -390,9 +390,9 @@ describe('Address', function() {
       it('should make this address from a p2sh input script', function() {
         var s = Script.fromString('OP_HASH160 20 0xa6ed4af315271e657ee307828f54a4365fa5d20f OP_EQUAL');
         var a = Address.fromScript(s, 'livenet');
-        a.toString().should.equal('3GueMn6ruWVfQTN4XKBGEbCbGLwRSUhfnS');
+        a.toString().should.equal('CXgX1GxVEf9pDRa45xqbPUTgjws7oRMXyD');
         var b = new Address(s, 'livenet');
-        b.toString().should.equal('3GueMn6ruWVfQTN4XKBGEbCbGLwRSUhfnS');
+        b.toString().should.equal('CXgX1GxVEf9pDRa45xqbPUTgjws7oRMXyD');
       });
 
       it('returns the same address if the script is a pay to public key hash out', function() {
@@ -401,7 +401,7 @@ describe('Address', function() {
         Address(script, Networks.livenet).toString().should.equal(address);
       });
       it('returns the same address if the script is a pay to script hash out', function() {
-        var address = '3BYmEwgV2vANrmfRymr1mFnHXgLjD6gAWm';
+        var address = 'Cb7WAW8Eh3KAfBRpUMXG92Fn4Becg13RLM';
         var script = Script.buildScriptHashOut(new Address(address));
         Address(script, Networks.livenet).toString().should.equal(address);
       });
