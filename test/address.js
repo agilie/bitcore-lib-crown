@@ -535,9 +535,9 @@ describe('Address', function() {
 
     it('can create an address from a set of public keys', function() {
       var address = Address.createMultisig(publics, 2, Networks.livenet);
-      address.toString().should.equal('3FtqPRirhPvrf7mVUSkygyZ5UuoAYrTW3y');
+      address.toString().should.equal('CWfi2vaV2Yb1U5yV36RJqrpAxWirsTsDdj');
       address = new Address(publics, 2, Networks.livenet);
-      address.toString().should.equal('3FtqPRirhPvrf7mVUSkygyZ5UuoAYrTW3y');
+      address.toString().should.equal('CWfi2vaV2Yb1U5yV36RJqrpAxWirsTsDdj');
     });
 
     it('works on testnet also', function() {

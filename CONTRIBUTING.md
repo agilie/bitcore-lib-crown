@@ -12,6 +12,8 @@ The Base58 "script address" isn't compatible with Bitcoin's, so many tests needs
 bitcore.Address.fromScriptHash(new Buffer("5ece0cadddc415b1980f001785947120acdb36fc","hex"))
 ```
 
+Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOut`, so its generated multisig address may differ from Crown Core's.
+
 Contributing
 ============
 
