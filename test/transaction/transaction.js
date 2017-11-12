@@ -471,7 +471,7 @@ describe('Transaction', function() {
     it('doesn\'t fail if a dust output is not dust', function() {
       var transaction = new Transaction()
         .from(simpleUtxoWith1BTC)
-        .to(toAddress, 546)
+        .to(toAddress, 5460)
         .change(changeAddress)
         .sign(privateKey);
       expect(function() {
