@@ -9,16 +9,24 @@ In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `sr
 
 In `lib/uri.js`: The example address is taken from Core's `src/qt/test/uritests.cpp`.
 
-The Base58 "script address" isn't compatible with Bitcoin's, so many tests needs modification. But in some cases we don't need to regenerate an address -- If the code already has the binary form, for example `5ece0cadddc415b1980f001785947120acdb36fc`, we can get the Base58 form using this function so we will only modify the Base58 form and leave the binary form unaffected:
+The Base58 "script address" isn't compatible with Bitcoin's, so many tests needs modification. But in some cases we don't need to regenerate a random address -- If the code already has the binary form, for example `5ece0cadddc415b1980f001785947120acdb36fc`, we can get the Base58 form using this function so we will only modify the Base58 form and leave the binary form unaffected:
 
 ```js
 bitcore.Address.fromScriptHash(new Buffer("5ece0cadddc415b1980f001785947120acdb36fc","hex"))
 ```
 
+However, if the code doesn't provide the binary form, we should regenerate a random address:
+
+```js
+bitcore.Script.buildMultisigOut([new bitcore.PublicKey(new bitcore.PrivateKey())],1).toScriptHashOut().toAddress()
+```
+
 Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOut`, so its generated multisig address may differ from Crown Core's.
 
-Contributing
-============
+The following is the original contributing guide of bitcore-lib.
+
+Contributing to Bitcore
+=======
 
 We're working hard to make *bitcore* the most powerful JavaScript library for working with bitcoin. Our goal is to have *bitcore* be a library that can be used by anyone interested in bitcoin, and to level expertise differences with great design and documentation.
 
