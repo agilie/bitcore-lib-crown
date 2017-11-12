@@ -1,4 +1,7 @@
-This repo is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib.
+What's Different
+================
+
+This repo, bitcore-lib-crown, is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib. We have replaced some parameters by looking up the Crown Core.
 
 In `lib/networks.js`: All parameters can be found in Core's `src/chainparams.cpp`.
 
