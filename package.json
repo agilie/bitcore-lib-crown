@@ -1,6 +1,9 @@
 {
   "name": "bitcore-lib-crown",
   "version": "0.1.0",
+  "publishConfig": {
+    "tag": "next"
+  },
   "description": "A pure and powerful JavaScript Crown library.",
   "author": "Crown Developers <info@crown.tech>",
   "main": "index.js",
