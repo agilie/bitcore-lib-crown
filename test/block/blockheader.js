@@ -249,10 +249,10 @@ describe('BlockHeader', function() {
   });
 
   describe('#getDifficulty', function() {
-    it('should get the correct difficulty for block 86756', function() {
+    it('should get the correct difficulty for block 1671882', function() {
       var x = BlockHeader.fromRawBlock(dataRawBlockBuffer);
-      x.bits.should.equal(0x1c3fffc0);
-      x.getDifficulty().should.equal(4);
+      x.bits.should.equal(0x18506d49);
+      x.getDifficulty().should.equal(13670735997.258162);
     });
 
     it('should get the correct difficulty for testnet block 552065', function() {
