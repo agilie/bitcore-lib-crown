@@ -238,12 +238,12 @@
       ],
       "outputs":[
         {
-          "satoshis":864185035,
-          "script":"76a9140487c481a671649e1db182ede98d093a335d671388ac"
+          "satoshis":78074186,
+          "script":"76a91497d685a28f33ac67fdc81e6ebecdb7a9b8efcc1088ac"
         },
         {
-          "satoshis":2635964965,
-          "script":"76a914590ea00fa3a18281d3020e7ba0c3a1d6aea663c088ac"
+          "satoshis":10000000000,
+          "script":"76a914d9d3f1c05e6feb3bc31855ccd0112814c979330188ac"
         }
       ],
       "nLockTime":0
@@ -275,68 +275,6 @@
         {
           "satoshis":3010000,
           "script":"76a9143770e8980281b63351861a17881cecbfaaa5c74b88ac"
-        }
-      ],
-      "nLockTime":0
-    },
-    {
-      "hash":"7801b9230e03ce29fcfcaf9648939ba522b5d0e303b7683c9babd658ae857903",
-      "version":1,
-      "inputs":[
-        {
-          "prevTxId":"ad0ac6d68fb05c6d70438ecaf30a33bcc7098f55d1d789c4031df956a000500f",
-          "outputIndex":1,
-          "sequenceNumber":4294967295,
-          "script":"47304402201068b39118afc383bb1b7de9aa8fe02cddbd8be5d29cab99d5fff23a0cef5667022020d6cfb4712fc61c13c7ca26e32028cce3d68afea7957ab4bfc5ee03bf9615d4012103b3385ed65f34e06927d8835e86103c3de352dbdece5cb704f6899886a0334662",
-          "scriptString":"71 0x304402201068b39118afc383bb1b7de9aa8fe02cddbd8be5d29cab99d5fff23a0cef5667022020d6cfb4712fc61c13c7ca26e32028cce3d68afea7957ab4bfc5ee03bf9615d401 33 0x03b3385ed65f34e06927d8835e86103c3de352dbdece5cb704f6899886a0334662"
-        },
-        {
-          "prevTxId":"a705541975bca57b97a14718f75535df8618bd0ad50cfb67657934567f57d408",
-          "outputIndex":1,
-          "sequenceNumber":4294967295,
-          "script":"47304402206728ade49cb5ec883e07d8acc6450e17b0e27b7f64c81143b4632eaded365e2e02202be3b4b723200de8c070b914d0050ead71d1418196a037f55f1a6dff4e45aee30121039e65fd2479d4edb0f3db6eecacdadcdc5ddd6d8ef518cf861466dfe1c21cc891",
-          "scriptString":"71 0x304402206728ade49cb5ec883e07d8acc6450e17b0e27b7f64c81143b4632eaded365e2e02202be3b4b723200de8c070b914d0050ead71d1418196a037f55f1a6dff4e45aee301 33 0x039e65fd2479d4edb0f3db6eecacdadcdc5ddd6d8ef518cf861466dfe1c21cc891"
-        }
-      ],
-      "outputs":[
-        {
-          "satoshis":3650000,
-          "script":"76a9149a704e2c99955f50694de60f93cdd449473678aa88ac"
-        },
-        {
-          "satoshis":3000000,
-          "script":"76a914dac91bdfe809346e9df5e753adaaef9336344bfc88ac"
-        }
-      ],
-      "nLockTime":0
-    },
-    {
-      "hash":"1367dbd80e679ccc7008ad5803d60fc60baa126a2490697197224dea823cc407",
-      "version":1,
-      "inputs":[
-        {
-          "prevTxId":"75a616a72e3c040cc85315473ad21ff65da7cfbc5359c2ee6d9f251e3b1385fc",
-          "outputIndex":0,
-          "sequenceNumber":4294967295,
-          "script":"47304402203da7beabc48687b746a7149679bd8982032816771b5634d1d651af59ce9fa86d0220198ea81d1a547e3493988dd94ffefff3b8fe030340886aa4ffc1b205532f0f9d012103b3385ed65f34e06927d8835e86103c3de352dbdece5cb704f6899886a0334662",
-          "scriptString":"71 0x304402203da7beabc48687b746a7149679bd8982032816771b5634d1d651af59ce9fa86d0220198ea81d1a547e3493988dd94ffefff3b8fe030340886aa4ffc1b205532f0f9d01 33 0x03b3385ed65f34e06927d8835e86103c3de352dbdece5cb704f6899886a0334662"
-        },
-        {
-          "prevTxId":"a505262fd090405552e8e88e0f3e15da3431b4fae4e41367489f2cbc37712904",
-          "outputIndex":0,
-          "sequenceNumber":4294967295,
-          "script":"47304402206b729bfd4c132b673c9f1a66c645ed374338963f1e6a3b56229f72b4358f8077022023bea16c89d267313da6df152a976b36a36e1bbea738d698f0ce72ef315962df012103ba341f7dd2401a2cd51682d418fd8a12b4d0b09acb8971f0671c2211366a8531",
-          "scriptString":"71 0x304402206b729bfd4c132b673c9f1a66c645ed374338963f1e6a3b56229f72b4358f8077022023bea16c89d267313da6df152a976b36a36e1bbea738d698f0ce72ef315962df01 33 0x03ba341f7dd2401a2cd51682d418fd8a12b4d0b09acb8971f0671c2211366a8531"
-        }
-      ],
-      "outputs":[
-        {
-          "satoshis":3700000,
-          "script":"76a9144769612ee7c6e977df40a8cdfd837c85cc7a48f788ac"
-        },
-        {
-          "satoshis":3000000,
-          "script":"76a914dac91bdfe809346e9df5e753adaaef9336344bfc88ac"
         }
       ],
       "nLockTime":0
