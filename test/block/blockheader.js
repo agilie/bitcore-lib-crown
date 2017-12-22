@@ -10,10 +10,10 @@ var fs = require('fs');
 var should = require('chai').should();
 
 // https://test-insight.bitpay.com/block/000000000b99b16390660d79fcc138d2ad0c89a0d044c4201a02bdf1f61ffa11
-var dataRawBlockBuffer = fs.readFileSync('test/data/blk86756-testnet.dat');
-var dataRawBlockBinary = fs.readFileSync('test/data/blk86756-testnet.dat', 'binary');
-var dataRawId = '000000000b99b16390660d79fcc138d2ad0c89a0d044c4201a02bdf1f61ffa11';
-var data = require('../data/blk86756-testnet');
+var dataRawBlockBuffer = fs.readFileSync('test/data/blk1671882-livenet.dat');
+var dataRawBlockBinary = fs.readFileSync('test/data/blk1671882-livenet.dat', 'binary');
+var dataRawId = '72a79139b132951724255181232988eeabc19e9b855a87727a3d8d59b369e2f7';
+var data = require('../data/blk1671882-livenet');
 
 describe('BlockHeader', function() {
 

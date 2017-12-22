@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  version: 2,
+  version: 1310978,
   time: 1513436443,
   bits: 407924041,
   nonce: 0,
