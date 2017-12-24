@@ -23,6 +23,8 @@ bitcore.Script.buildMultisigOut([new bitcore.PublicKey(new bitcore.PrivateKey())
 
 Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOut`, so its generated multisig address may differ from Crown Core's.
 
+`BlockHeader` instance now has a property `auxPow` (an `AuxPow` instance). `AuxPow` inherits `MerkleTransaction`, and `MerkleTransaction` inherits `Transaction`. The same mechanism can be found in Crown Core.
+
 The following is the original contributing guide of bitcore-lib.
 
 Contributing to Bitcore
