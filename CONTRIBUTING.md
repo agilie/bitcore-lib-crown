@@ -25,6 +25,8 @@ Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOu
 
 `BlockHeader` instance now has a property `auxPow` (an `AuxPow` instance). `AuxPow` inherits `MerkleTransaction`, and `MerkleTransaction` inherits `Transaction`. The same mechanism can be found in Crown Core.
 
+Note that the return value of `toBuffer`, `toObject` and `toJSON` method of `MerkleTransaction` and `AuxPow` doesn't include the coinbase link, aux blockchain link or the parent block header. It only includes the parent block coinbase transaction, that is, the first part of the AuxPow data. `hash` property and `_getHash` method also refers to the hash of this part.
+
 The following is the original contributing guide of bitcore-lib.
 
 Contributing to Bitcore
