@@ -71,14 +71,14 @@ describe('Block', function() {
 
     it('should instantiate from a raw block binary', function() {
       var x = Block.fromRawBlock(dataRawBlockBinary);
-      x.header.version.should.equal(2);
-      new BN(x.header.bits).toString('hex').should.equal('1c3fffc0');
+      x.header.version.should.equal(0x140102);
+      new BN(x.header.bits).toString('hex').should.equal('18506d49');
     });
 
     it('should instantiate from raw block buffer', function() {
       var x = Block.fromRawBlock(dataRawBlockBuffer);
-      x.header.version.should.equal(2);
-      new BN(x.header.bits).toString('hex').should.equal('1c3fffc0');
+      x.header.version.should.equal(0x140102);
+      new BN(x.header.bits).toString('hex').should.equal('18506d49');
     });
 
   });
