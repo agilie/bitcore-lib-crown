@@ -33,6 +33,8 @@ Similarly, the return value of `toBuffer`, `toObject` or `toJSON` method of `Blo
 
 But the return value of `toBuffer`, `toObject` or `toJSON` method of `Block` includes the AuxPow data.
 
+CAUTION: Use `gulp test:node` to test. Do not test the browser side because PhantomJS doesn't support `let` keyword.
+
 The following is the original contributing guide of bitcore-lib.
 
 Contributing to Bitcore
