@@ -1,7 +1,7 @@
 What's Different
 ================
 
-This repo, bitcore-lib-crown, is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib. We have replaced some parameters by looking up the Crown Core.
+This repo is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib. We have replaced some parameters by looking up the Crown Core.
 
 In `lib/networks.js`: All parameters can be found in Core's `src/chainparams.cpp`.
 
@@ -22,16 +22,6 @@ bitcore.Script.buildMultisigOut([new bitcore.PublicKey(new bitcore.PrivateKey())
 ```
 
 Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOut`, so its generated multisig address may differ from Crown Core's.
-
-`BlockHeader` instance now has a property `auxPow` (an `AuxPow` instance). `AuxPow` inherits `MerkleTransaction`, and `MerkleTransaction` inherits `Transaction`. The same mechanism can be found in Crown Core.
-
-`BlockHeader` instance now has a property `versionObject`. AuxPow validation needs it. Our block version number is more complex than Bitcoin.
-
-Note that the return value of `toBuffer`, `toObject` or `toJSON` method of `MerkleTransaction` and `AuxPow` doesn't include the coinbase link, aux blockchain link or the parent block header. It only includes the parent block coinbase transaction, that is, the first part of the AuxPow data. `hash` property and `_getHash` method also refers to the hash of this part.
-
-Similarly, the return value of `toBuffer`, `toObject` or `toJSON` method of `BlockHeader` doesn't include the AuxPow data, because the AuxPow data won't be taken into account when computing a block hash.
-
-But the return value of `toBuffer`, `toObject` or `toJSON` method of `Block` includes the AuxPow data.
 
 CAUTION: Use `gulp test:node` to test. Do not test the browser side because PhantomJS doesn't support `let` keyword.
 
