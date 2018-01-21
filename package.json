@@ -95,7 +95,7 @@
     "lodash": "=3.10.1"
   },
   "devDependencies": {
-    "bitcore-build-crown": "zhanzhenzhen/bitcore-build-crown",
+    "bitcore-build-crown": "0.1.0",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
