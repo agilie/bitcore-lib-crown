@@ -1,5 +1,5 @@
-
+'use strict';
 
 var bitcoreTasks = require('bitcore-build-crown');
 
-bitcoreTasks('lib');
+bitcoreTasks('lib', {skipBrowser: true});
