@@ -1,13 +1,15 @@
 What's Different
 ================
 
-This repo is based on the `9517864f14d09700f3fd02ff61173003c0280774` commit of the official bitcore-lib. We have replaced some parameters by looking up the Crown Core.
+This repo is based on `9517864f14d09700f3fd02ff61173003c0280774` (Base Commit) of the official bitcore-lib, and synced (as much as possible) to `062baa94fab80450723700b82fa6a676c9142ea2` (Ref Commit). We have replaced some parameters by looking up the Crown Core.
 
 In `lib/networks.js`: All parameters can be found in Core's `src/chainparams.cpp`.
 
-In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `src/main.h`. `Transaction.DUST_AMOUNT` can be found in Core's `src/primitives/transaction.h`.
+In `lib/transaction/transaction.js`: `MAX_BLOCK_SIZE` can be found in Core's `src/main.h`. `Transaction.DUST_AMOUNT` can be found in Core's `src/primitives/transaction.h`. But we did not modify `FEE_SECURITY_MARGIN` and `FEE_PER_KB` as Ref Commit did.
 
 In `lib/uri.js`: The example address is taken from Core's `src/qt/test/uritests.cpp`.
+
+In `test/transaction/transaction.js`: Ref Commit's `simpleUtxoWith1000000Satoshis` function isn't added. All the changes below this function definition isn't made either.
 
 The Base58 "script address" isn't compatible with Bitcoin's, so many tests needs modification. But in some cases we don't need to regenerate a random address -- If the code already has the binary form, for example `5ece0cadddc415b1980f001785947120acdb36fc`, we can get the Base58 form using this function so we will only modify the Base58 form and leave the binary form unaffected:
 
