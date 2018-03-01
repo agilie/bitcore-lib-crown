@@ -25,8 +25,6 @@ bitcore.Script.buildMultisigOut([new bitcore.PublicKey(new bitcore.PrivateKey())
 
 Bitcore sorts multisig public keys internally when doing `Script.buildMultisigOut`, so its generated multisig address may differ from Crown Core's.
 
-We temporarily suppress browser test, so `npm test` or `gulp test` just tests Node.js environment.
-
 The following is the original contributing guide of bitcore-lib.
 
 Contributing to Bitcore

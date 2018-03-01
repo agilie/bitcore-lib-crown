@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
-    "test": "gulp test:node",
+    "test": "gulp test",
     "coverage": "gulp coverage",
     "build": "gulp"
   },
@@ -95,7 +95,7 @@
     "lodash": "=4.17.4"
   },
   "devDependencies": {
-    "bitcore-build-crown": "0.1.0",
+    "bitcore-build-crown": "0.2.0",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
