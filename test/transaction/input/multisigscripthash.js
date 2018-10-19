@@ -21,10 +21,10 @@ describe('MultiSigScriptHashInput', function() {
   var public1 = privateKey1.publicKey;
   var public2 = privateKey2.publicKey;
   var public3 = privateKey3.publicKey;
-  var address = new Address('CJmUPXS4thHXQQ5Lx3YRtaEBoRwSggDWtH');
+  var address = new Address('CRMNqJUeo7WGoW2vTdweUH7hu4dufwpD79NN');
 
   var output = {
-    address: 'CJmUPXS4thHXQQ5Lx3YRtaEBoRwSggDWtH',
+    address: 'CRMNqJUeo7WGoW2vTdweUH7hu4dufwpD79NN',
     txId: '66e64ef8a3b384164b78453fa8c8194de9a473ba14f89485a0e433699daec140',
     outputIndex: 0,
     script: new Script(address),
