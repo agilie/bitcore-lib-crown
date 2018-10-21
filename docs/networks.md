@@ -33,8 +33,10 @@ var livenet = new Network();
 _.extend(livenet, {
   name: 'livenet',
   alias: 'mainnet',
+  pubkeyAddressPrefix: Buffer.from([0x00]),
   pubkeyhash: 0x00,
   privatekey: 0x80,
+  scriptAddressPrefix: Buffer.from([0x05]),
   scripthash: 0x05,
   xpubkey:  0x0488b21e,
   xprivkey: 0x0488ade4,
@@ -45,8 +47,10 @@ var testnet = new Network();
 _.extend(testnet, {
   name: 'testnet',
   alias: 'testnet',
+  pubkeyAddressPrefix: Buffer.from([0x6f]),
   pubkeyhash: 0x6f,
   privatekey: 0xef,
+  scriptAddressPrefix: Buffer.from([0xc4]),
   scripthash: 0xc4,
   xpubkey: 0x043587cf,
   xprivkey: 0x04358394,

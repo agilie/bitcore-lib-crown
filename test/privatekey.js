@@ -49,9 +49,11 @@ describe('PrivateKey', function() {
     var nmc = {
       name: 'namecoin',
       alias: 'namecoin',
+      pubkeyAddressPrefix: Buffer.from([0x34]),
       pubkeyhash: 0x34,
       privatekey: 0xB4,
       // these below aren't the real NMC version numbers
+      scriptAddressPrefix: Buffer.from([0x08]),
       scripthash: 0x08,
       xpubkey: 0x0278b20e,
       xprivkey: 0x0278ade4,

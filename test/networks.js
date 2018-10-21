@@ -40,8 +40,10 @@ describe('Networks', function() {
     var custom = {
       name: 'customnet',
       alias: 'mynet',
+      pubkeyAddressPrefix: Buffer.from([0x10]),
       pubkeyhash: 0x10,
       privatekey: 0x90,
+      scriptAddressPrefix: Buffer.from([0x08]),
       scripthash: 0x08,
       xpubkey: 0x0278b20e,
       xprivkey: 0x0278ade4,
@@ -73,8 +75,10 @@ describe('Networks', function() {
   it('should not set a network map for an undefined value', function() {
     var custom = {
       name: 'somenet',
+      pubkeyAddressPrefix: Buffer.from([0x13]),
       pubkeyhash: 0x13,
       privatekey: 0x93,
+      scriptAddressPrefix: Buffer.from([0x11]),
       scripthash: 0x11,
       xpubkey: 0x0278b20f,
       xprivkey: 0x0278ade5,
