@@ -277,7 +277,7 @@ describe('Address', function() {
     it('should error because of incorrect length buffer for transform buffer', function() {
       (function() {
         return Address._transformBuffer(new Buffer(20));
-      }).should.throw('Address buffers must be exactly 21 bytes.');
+      }).should.throw('Address buffers must be 23 or 24 bytes.');
     });
 
     it('should error because of incorrect type for pubkey transform', function() {
@@ -353,8 +353,10 @@ describe('Address', function() {
     it('should classify from a custom network', function() {
       var custom = {
         name: 'customnetwork',
+        pubkeyAddressPrefix: Buffer.from([0x01, 0x74, 0xf1]),
         pubkeyhash: 0x1c,
         privatekey: 0x1e,
+        scriptAddressPrefix: Buffer.from([0x10, 0x64, 0xde]),
         scripthash: 0x28,
         xpubkey: 0x02e8de8f,
         xprivkey: 0x02e8da54,
