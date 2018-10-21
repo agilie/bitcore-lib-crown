@@ -15,7 +15,7 @@ describe('Base58Check', function() {
   });
 
   it('can validate a serialized string', function() {
-    var address = '3J98t1WpEZ73CNmQviecrnyiWrnqRhWNLy';
+    var address = 'CRMcyqcdjVBHHAdsMhUyEoEougpwT2uCa2rX';
     Base58Check.validChecksum(address).should.equal(true);
     address = address + 'a';
     Base58Check.validChecksum(address).should.equal(false);
@@ -32,7 +32,7 @@ describe('Base58Check', function() {
   });
 
   describe('#set', function() {
-    
+
     it('should set a buf', function() {
       should.exist(Base58Check().set({buf: buf}).buf);
     });
@@ -83,7 +83,7 @@ describe('Base58Check', function() {
   });
 
   describe('#fromBuffer', function() {
-    
+
     it('should not fail', function() {
       should.exist(Base58Check().fromBuffer(buf));
     });
