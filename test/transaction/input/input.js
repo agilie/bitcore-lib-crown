@@ -18,7 +18,7 @@ describe('Transaction.Input', function() {
   var publicKey = privateKey.publicKey;
   var address = new Address(publicKey, Networks.livenet);
   var output = {
-    address: 'CJmUPXS4thHXQQ5Lx3YRtaEBoRwSggDWtH',
+    address: 'CRMNqJUeo7WGoW2vTdweUH7hu4dufwpD79NN',
     prevTxId: '66e64ef8a3b384164b78453fa8c8194de9a473ba14f89485a0e433699daec140',
     outputIndex: 0,
     script: new Script(address),
