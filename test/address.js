@@ -18,7 +18,7 @@ var invalidbase58 = require('./data/bitcoind/base58_keys_invalid.json');
 describe('Address', function() {
 
   var pubkeyhash = new Buffer('3c3fa3d4adcaf8f52d5b1843975e122548269937', 'hex');
-  var buf = Buffer.concat([new Buffer([0]), pubkeyhash]);
+  var buf = Buffer.concat([Buffer.from([0x01, 0x75, 0x07]), pubkeyhash]);
   var str = 'CRWHTZ6rCspYY2UrzuTrrXRFxSfXkALafum5';
 
   it('can\'t build without data', function() {
@@ -410,7 +410,7 @@ describe('Address', function() {
     it('should derive from this known address string livenet', function() {
       var address = new Address(str);
       var buffer = address.toBuffer();
-      var slice = buffer.slice(1);
+      var slice = buffer.slice(3);
       var sliceString = slice.toString('hex');
       sliceString.should.equal(pubkeyhash.toString('hex'));
     });
@@ -440,7 +440,7 @@ describe('Address', function() {
 
     it('3c3fa3d4adcaf8f52d5b1843975e122548269937 corresponds to hash CRWHTZ6rCspYY2UrzuTrrXRFxSfXkALafum5', function() {
       var address = new Address(str);
-      address.toBuffer().slice(1).toString('hex').should.equal(pubkeyhash.toString('hex'));
+      address.toBuffer().slice(3).toString('hex').should.equal(pubkeyhash.toString('hex'));
     });
 
   });
