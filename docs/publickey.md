@@ -40,14 +40,14 @@ Example:
 > compressedPK.compressed;
 true
 > compressedPK.toAddress().toString();
-'1KbUJ4x8epz6QqxkmZbTc4f79JbWWz6g37'
+'CRWWZTcdDamRfsw3KNz9BF5TwKT1DBDVsX8j'
 // compressed public key starting with 0x02 (smaller than midpoint of curve)
 > var compressedPK2 = new bitcore.PublicKey('02a1633cafcc01ebfb6d78e39f687a1f'+
     '0995c62fc95f51ead10a02ee0be551b5dc');
 > compressedPK2.compressed;
 true
 > compressedPK.toAddress().toString();
-'1KbUJ4x8epz6QqxkmZbTc4f79JbWWz6g37'
+'CRWWZTcdDamRfsw3KNz9BF5TwKT1DBDVsX8j'
 // uncompressed public key, starting with 0x04. Contains both X and Y encoded
 > var uncompressed = bitcore.PublicKey('0479BE667EF9DCBBAC55A06295CE870B07029'+
     'BFCDB2DCE28D959F2815B16F81798483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68'+
@@ -55,5 +55,5 @@ true
 > uncompressed.compressed
 false
 > uncompressed.toAddress().toString()
-'1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm'
+'CRWRFMtefWRaihSZbaYdiuEdLG2T9NdzpipH'
 ```

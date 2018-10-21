@@ -75,7 +75,7 @@ var p2shAddress = new bitcore.Address([publicKey1, publicKey2, publicKey3], 2);
 
 ```javascript
 var paymentInfo = {
-  address: '1DNtTk4PUCGAdiNETAzQFWZiy2fCHtGnPx',
+  address: 'CRWQLsnJKqanwx9uirfkaBiuqwGjGs1g63Az',
   amount: 120000 //satoshis
 };
 var uri = new bitcore.URI(paymentInfo).toString();

@@ -4,9 +4,9 @@ Represents a bitcoin payment URI. Bitcoin URI strings became the most popular wa
 URI Examples:
 
 ```
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2&message=Payment&label=Satoshi&extra=other-param
+bitcoin:CRWD7zgXvyi6nDDpmnmpRb8ytJ2u25UupSKC
+bitcoin:CRWD7zgXvyi6nDDpmnmpRb8ytJ2u25UupSKC?amount=1.2
+bitcoin:CRWD7zgXvyi6nDDpmnmpRb8ytJ2u25UupSKC?amount=1.2&message=Payment&label=Satoshi&extra=other-param
 ```
 
 ## URI Validation
@@ -15,7 +15,7 @@ The main use that we expect you'll have for the `URI` class in bitcore is valida
 The code for validating URIs looks like this:
 
 ```javascript
-var uriString = 'bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2';
+var uriString = 'bitcoin:CRWD7zgXvyi6nDDpmnmpRb8ytJ2u25UupSKC?amount=1.2';
 var valid = URI.isValid(uriString);
 var uri = new URI(uriString);
 console.log(uri.address.network, uri.amount); // 'livenet', 120000000
@@ -33,7 +33,7 @@ The code for creating an URI from an Object looks like this:
 
 ```javascript
 var uriString = new URI({
-  address: '12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu',
+  address: 'CRWD7zgXvyi6nDDpmnmpRb8ytJ2u25UupSKC',
   amount : 10000, // in satoshis
   message: 'My payment request'
 });
