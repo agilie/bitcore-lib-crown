@@ -26,8 +26,14 @@ describe('Networks', function() {
     networks.testnet.networkMagic.should.deep.equal(new Buffer('0f180e06', 'hex'));
     networks.testnet.port.should.equal(19340);
     networks.testnet.dnsSeeds.should.deep.equal([
-      'testnet-seed.crown.tech',
-      'crwtestnet.infernopool.com'
+      'fra-testnet-crwdns.crowndns.info',
+      'blr-testnet-crwdns.crowndns.info',
+      'sgp-testnet-crwdns.crowndns.info',
+      'lon-testnet-crwdns.crowndns.info',
+      'nyc-testnet-crwdns.crowndns.info',
+      'tor-testnet-crwdns.crowndns.info',
+      'sfo-testnet-crwdns.crowndns.info',
+      'ams-testnet-crwdns.crowndns.info'
     ]);
   });
 
