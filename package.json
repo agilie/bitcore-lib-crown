@@ -1,6 +1,6 @@
 {
   "name": "bitcore-lib-crown",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "publishConfig": {
     "tag": "next"
   },
@@ -95,7 +95,7 @@
     "lodash": "=3.10.1"
   },
   "devDependencies": {
-    "bitcore-build-crown": "0.1.0",
+    "bitcore-build-crown": "0.1.x",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.8.10",
