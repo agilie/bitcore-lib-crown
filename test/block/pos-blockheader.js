@@ -15,7 +15,7 @@ var dataRawBlockBinary = fs.readFileSync('test/data/blk2335001-livenet.dat', 'bi
 var dataRawId = '4e8753f37b413d19e09c9a2116985cc5f7afda2e8add960510445a7c11e9a814';
 var data = require('../data/blk2335001-livenet');
 
-describe('BlockHeader', function() {
+describe('BlockHeader (PoS)', function() {
 
   var version = data.version;
   var prevblockidbuf = new Buffer(data.prevblockidhex, 'hex');
