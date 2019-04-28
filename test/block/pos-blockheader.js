@@ -9,7 +9,7 @@ var BlockHeader = bitcore.BlockHeader;
 var fs = require('fs');
 var should = require('chai').should();
 
-// https://test-insight.bitpay.com/block/000000000b99b16390660d79fcc138d2ad0c89a0d044c4201a02bdf1f61ffa11
+// Block 2335001
 var dataRawBlockBuffer = fs.readFileSync('test/data/blk2335001-livenet.dat');
 var dataRawBlockBinary = fs.readFileSync('test/data/blk2335001-livenet.dat', 'binary');
 var dataRawId = '4e8753f37b413d19e09c9a2116985cc5f7afda2e8add960510445a7c11e9a814';
